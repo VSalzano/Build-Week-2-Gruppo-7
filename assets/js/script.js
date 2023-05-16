@@ -1,5 +1,5 @@
 const ENDPOINT =
-  "https://striveschool-api.herokuapp.com/api/deezer/search?q=queen";
+  "https://striveschool-api.herokuapp.com/api/deezer/search?q=rock";
 let header = document.getElementById("main");
 let featured = document.getElementById("featured");
 
