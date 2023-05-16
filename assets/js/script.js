@@ -35,9 +35,7 @@ fetch(ENDPOINT)
                   <h1 class="fs-1"><a href="#">${albums.data[3].album.title}</a></h1>
                 </div>
 
-                
-                
-                <a class="fs-5 text-white" href="#">${albums.data[3].artist.name}</a>
+                <a href="./artist-page.html?artistId=${albums.data[3].artist.id}">${albums.data[3].artist.name}</a>
 
 
                 <div class="d-flex align-items-center mt-5">
@@ -65,10 +63,6 @@ fetch(ENDPOINT)
     let ancora = document.querySelector("h1 a");
     console.log(ancora);
     ancora.classList.add("fss");
-
-    let playMe = document.querySelector("#catch");
-    console.log(playMe);
-    playMe.style.backgroundColor = "#1ED760";
 
     function getRandomElements(array, numElements) {
       const shuffledArray = array.slice();
