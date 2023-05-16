@@ -1,5 +1,5 @@
 const ENDPOINT =
-  "https://striveschool-api.herokuapp.com/api/deezer/search?q=rap";
+  "https://striveschool-api.herokuapp.com/api/deezer/search?q=rock";
 let header = document.getElementById("main");
 let featured = document.getElementById("featured");
 
@@ -63,9 +63,8 @@ fetch(ENDPOINT)
     ancora.classList.add("fss")
 
     function getRandomElements(array, numElements) {
-      const shuffledArray = array.slice(); // Copia dell'array originale
+      const shuffledArray = array.slice();
 
-      // Mescolamento dell'array utilizzando l'algoritmo di Fisher-Yates
       for (let i = shuffledArray.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [shuffledArray[i], shuffledArray[j]] = [
@@ -74,11 +73,9 @@ fetch(ENDPOINT)
         ];
       }
 
-      // Prendi i primi 'numElements' elementi dall'array mescolato
       return shuffledArray.slice(0, numElements);
     }
 
-    // Esempio di utilizzo
     const randomAlbums = getRandomElements(albums.data, 6);
     console.log(randomAlbums);
 
