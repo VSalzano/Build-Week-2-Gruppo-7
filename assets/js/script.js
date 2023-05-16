@@ -63,10 +63,6 @@ fetch(ENDPOINT)
     </div>
     `;
 
- 
-  
-  
-
     header.appendChild(currentAlbum);
     let ancora = document.querySelector("h1 a");
     console.log(ancora);
@@ -114,8 +110,6 @@ fetch(ENDPOINT)
         `;
 
       featured.appendChild(col);
-
-
     });
   })
   .catch((err) => {
