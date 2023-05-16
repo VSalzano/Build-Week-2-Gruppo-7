@@ -23,18 +23,28 @@ fetch(ENDPOINT)
                   alt="album cover"
                 />
               </div>
+              
               <div>
-                <p class="p-0 m-0 fs-6 mb-2">ALBUM</p>
+                <div class="d-flex justify-content-between">
+                  <p class="p-0 m-0 fs-6 mb-2">ALBUM</p>
+                  <button class="border border-dark bg-dark text-secondary rounded-pill p-1 ps-3 pe-3 mt-2 fs-6 me-5">NASCONDI ANNUNCI</button>
+                </div>
+                
                 <div>
+
+               
+                
                   <h1 class="fs-1"><a href="#">${albums.data[3].album.title}</a></h1>
                 </div>
 
+                
+                
                 <a class="fs-5 text-white" href="#">${albums.data[3].artist.name}</a>
 
 
                 <div class="d-flex align-items-center mt-5">
-                  <button
-                    class="btn me-5 bg-success rounded-pill ps-4 pe-4"
+                  <button id="catch"
+                    class="btn me-3  rounded-pill ps-4 pe-4"
                     type="submit"
                   >
                     Play
@@ -60,7 +70,11 @@ fetch(ENDPOINT)
     header.appendChild(currentAlbum);
     let ancora = document.querySelector("h1 a");
     console.log(ancora);
-    ancora.classList.add("fss")
+    ancora.classList.add("fss");
+
+    let playMe = document.querySelector("#catch");
+    console.log(playMe);
+    playMe.style.backgroundColor = "#1ED760";
 
     function getRandomElements(array, numElements) {
       const shuffledArray = array.slice();
