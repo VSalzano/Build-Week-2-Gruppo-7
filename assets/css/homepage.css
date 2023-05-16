@@ -10,6 +10,11 @@ a{
 .fss{
     font-size: 4rem;
     color: white;
+   
+}
+
+#full{
+    background-color: #171717;
 }
 
 i{
