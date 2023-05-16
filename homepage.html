@@ -1,119 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home page</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/be93b78a1f.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="container-fluid m-0">
-      <div class="row">
-        <div class="col-3 d-flex bg-black flex-column ps-4">
-          <a class="text-light mt-2" href=""
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-three-dots"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
-              /></svg
-          ></a>
-          <a class="text-light pt-2" href=""
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-house-door-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"
-              />
-            </svg>
-            Home</a
-          >
-          <a class="text-light" href=""
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-search"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-              />
-            </svg>
-            Cerca</a
-          >
-          <a class="text-light" href=""
-            ><i class="fa-solid fa-book pb-4"></i> La tua libreria</a
-          >
-          <a class="text-light" href=""
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-plus-square-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"
-              />
-            </svg>
-            Crea playlist</a
-          >
-          <a class="text-light" href="">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-calendar-heart"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM1 14V4h14v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1Zm7-6.507c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
-              />
-            </svg>
-            Brani che ti piacciono</a
-          >
-          <a class="text-light" href=""
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-file-earmark-pdf-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M5.523 12.424c.14-.082.293-.162.459-.238a7.878 7.878 0 0 1-.45.606c-.28.337-.498.516-.635.572a.266.266 0 0 1-.035.012.282.282 0 0 1-.026-.044c-.056-.11-.054-.216.04-.36.106-.165.319-.354.647-.548zm2.455-1.647c-.119.025-.237.05-.356.078a21.148 21.148 0 0 0 .5-1.05 12.045 12.045 0 0 0 .51.858c-.217.032-.436.07-.654.114zm2.525.939a3.881 3.881 0 0 1-.435-.41c.228.005.434.022.612.054.317.057.466.147.518.209a.095.095 0 0 1 .026.064.436.436 0 0 1-.06.2.307.307 0 0 1-.094.124.107.107 0 0 1-.069.015c-.09-.003-.258-.066-.498-.256zM8.278 6.97c-.04.244-.108.524-.2.829a4.86 4.86 0 0 1-.089-.346c-.076-.353-.087-.63-.046-.822.038-.177.11-.248.196-.283a.517.517 0 0 1 .145-.04c.013.03.028.092.032.198.005.122-.007.277-.038.465z"
-              />
-              <path
-                fill-rule="evenodd"
-                d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM4.165 13.668c.09.18.23.343.438.419.207.075.412.04.58-.03.318-.13.635-.436.926-.786.333-.401.683-.927 1.021-1.51a11.651 11.651 0 0 1 1.997-.406c.3.383.61.713.91.95.28.22.603.403.934.417a.856.856 0 0 0 .51-.138c.155-.101.27-.247.354-.416.09-.181.145-.37.138-.563a.844.844 0 0 0-.2-.518c-.226-.27-.596-.4-.96-.465a5.76 5.76 0 0 0-1.335-.05 10.954 10.954 0 0 1-.98-1.686c.25-.66.437-1.284.52-1.794.036-.218.055-.426.048-.614a1.238 1.238 0 0 0-.127-.538.7.7 0 0 0-.477-.365c-.202-.043-.41 0-.601.077-.377.15-.576.47-.651.823-.073.34-.04.736.046 1.136.088.406.238.848.43 1.295a19.697 19.697 0 0 1-1.062 2.227 7.662 7.662 0 0 0-1.482.645c-.37.22-.699.48-.897.787-.21.326-.275.714-.08 1.103z"
-              /></svg
-            >I tuoi episodi</a
-          >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="assets/css/homepage.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/be93b78a1f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid m-0">
+    <div class="row">
+      <div class="col-3 d-flex bg-black flex-column ps-4">
+        <a class="text-light mt-2" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path
+              d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+          </svg></a>
+        <a class="text-light pt-2" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+            <path
+              d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+          </svg>
+          Home</a>
+        <a class="text-light" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-search" viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+          Cerca</a>
+        <a class="text-light" href=""><i class="fa-solid fa-book pb-4"></i> La tua libreria</a>
+        <a class="text-light" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+            <path
+              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z" />
+          </svg>
+          Crea playlist</a>
+        <a class="text-light" href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-calendar-heart" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM1 14V4h14v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1Zm7-6.507c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+          </svg>
+          Brani che ti piacciono</a>
+        <a class="text-light" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-file-earmark-pdf-fill" viewBox="0 0 16 16">
+            <path
+              d="M5.523 12.424c.14-.082.293-.162.459-.238a7.878 7.878 0 0 1-.45.606c-.28.337-.498.516-.635.572a.266.266 0 0 1-.035.012.282.282 0 0 1-.026-.044c-.056-.11-.054-.216.04-.36.106-.165.319-.354.647-.548zm2.455-1.647c-.119.025-.237.05-.356.078a21.148 21.148 0 0 0 .5-1.05 12.045 12.045 0 0 0 .51.858c-.217.032-.436.07-.654.114zm2.525.939a3.881 3.881 0 0 1-.435-.41c.228.005.434.022.612.054.317.057.466.147.518.209a.095.095 0 0 1 .026.064.436.436 0 0 1-.06.2.307.307 0 0 1-.094.124.107.107 0 0 1-.069.015c-.09-.003-.258-.066-.498-.256zM8.278 6.97c-.04.244-.108.524-.2.829a4.86 4.86 0 0 1-.089-.346c-.076-.353-.087-.63-.046-.822.038-.177.11-.248.196-.283a.517.517 0 0 1 .145-.04c.013.03.028.092.032.198.005.122-.007.277-.038.465z" />
+            <path fill-rule="evenodd"
+              d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM4.165 13.668c.09.18.23.343.438.419.207.075.412.04.58-.03.318-.13.635-.436.926-.786.333-.401.683-.927 1.021-1.51a11.651 11.651 0 0 1 1.997-.406c.3.383.61.713.91.95.28.22.603.403.934.417a.856.856 0 0 0 .51-.138c.155-.101.27-.247.354-.416.09-.181.145-.37.138-.563a.844.844 0 0 0-.2-.518c-.226-.27-.596-.4-.96-.465a5.76 5.76 0 0 0-1.335-.05 10.954 10.954 0 0 1-.98-1.686c.25-.66.437-1.284.52-1.794.036-.218.055-.426.048-.614a1.238 1.238 0 0 0-.127-.538.7.7 0 0 0-.477-.365c-.202-.043-.41 0-.601.077-.377.15-.576.47-.651.823-.073.34-.04.736.046 1.136.088.406.238.848.43 1.295a19.697 19.697 0 0 1-1.062 2.227 7.662 7.662 0 0 0-1.482.645c-.37.22-.699.48-.897.787-.21.326-.275.714-.08 1.103z" />
+          </svg>I tuoi episodi</a>
 
         <hr class="text-light" />
 
@@ -143,187 +82,300 @@
         </div>
       </div>
       <div class="col-7 px-0">
-        <div class="container-fluid bg-dark ps-4 pe-4 pb-5">
+        <div id="full" class="container-fluid ps-4 pe-4 pb-5">
           <div id="arrows" class="mb-3 pt-3 d-flex justify-content-between">
             <div>
               <i class="fa-solid fa-chevron-left me-3 text-white bg-dark p-2 rounded-circle"></i>
               <i class="fa-solid fa-chevron-right text-white bg-dark p-2 rounded-circle"></i>
             </div>
 
-            <div>
-              <div class="btn-group">
-                <button class="btn btn-dark btn-sm dropdown-toggle text-white rounded-pill p-0 pe-3" type="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="img-fluid rounded-pill me-2" src="assets/imgs/main/image-10.jpg" width="20px" alt="" />
-                  Lidia Miller......
-                </button>
-                <ul class="dropdown-menu">
-                  ...
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div id="main" class="bg-black p-3 d-flex text-white mb-3 rounded">
-            <div>
-              <img class="p-0 me-3" src="assets/imgs/main/image-1.jpg" width="150px" alt="" />
-            </div>
-            <div>
-              <p class="p-0 m-0 fs-6 mb-2">ALBUM</p>
               <div>
-                <h1 class="fs-1">VIOLA(feat. Salmo)</h1>
-              </div>
-
-              <p>Fedez, Salmo</p>
-
-              <p>Ascolta il nuovo singolo di Fedez e Salmo!</p>
-
-              <div class="d-flex align-items-center">
-                <button class="btn me-5 bg-success rounded-pill ps-4 pe-4" type="submit">
-                  Play
-                </button>
-
-                <button class="btn me-5 rounded-pill ps-4 pe-4 text-white border-secondary" type="submit">
-                  Salva
-                </button>
-
-                <i class="fa-sharp fa-solid fa-ellipsis fs-4"></i>
+                <div class="btn-group">
+                  <button
+                    class="btn btn-dark btn-sm dropdown-toggle text-white rounded-pill p-0 pe-3 bg-black"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      class="img-fluid rounded-pill me-2"
+                      src="assets/imgs/main/image-10.jpg"
+                      width="20px"
+                      alt=""
+                    />
+                    Lidia Miller......
+                  </button>
+                  <ul class="dropdown-menu">
+                    ...
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
+            <div id="main" class="bg-black p-3 d-flex text-white mb-3 rounded">
+              <!-- <div>
+                <img
+                  class="p-0 me-3"
+                  src="assets/imgs/main/image-1.jpg"
+                  width="150px"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="p-0 m-0 fs-6 mb-2">ALBUM</p>
+                <div>
+                  <h1 class="fs-1">VIOLA(feat. Salmo)</h1>
+                </div>
+
+                <p>Fedez, Salmo</p>
+
+                <p>Ascolta il nuovo singolo di Fedez e Salmo!</p>
+
+                <div class="d-flex align-items-center">
+                  <button
+                    class="btn me-5 bg-success rounded-pill ps-4 pe-4"
+                    type="submit"
+                  >
+                    Play
+                  </button>
+
+                  <button
+                    class="btn me-5 rounded-pill ps-4 pe-4 text-white border-secondary"
+                    type="submit"
+                  >
+                    Salva
+                  </button>
+
+                  <i class="fa-sharp fa-solid fa-ellipsis fs-4"></i>
+                </div>
+              </div> -->
+            </div>
 
           <div class="container-fluid p-0 text-white">
-            <div class="row g-4 justify-content-between align-items-center">
-              <h2 class="text-white mb-1">Buonasera</h2>
-              <div class="col-sm-6 col-xl-4">
-                <div class="d-flex align-items-center border-start-0 bg-black">
-                  <div class="me-3">
-                    <div class="d-flex m-0">
-                      <img src="assets/imgs/main/image-12.jpg" width="30px" alt="" />
-                      <img src="assets/imgs/main/image-8.jpg" width="30px" alt="" />
+            <h2 class="text-white mb-1">Buonasera</h2>
+            <div id="featured" class="row g-4 justify-content-between align-items-center">
+              <!-- <div class="col-sm-6 col-xl-4">
+                  <div
+                    class="d-flex align-items-center border-start-0 bg-black"
+                  >
+                    <div class="me-3">
+                      <div class="d-flex m-0">
+                        <img
+                          src="assets/imgs/main/image-12.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/imgs/main/image-8.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="m-0 d-flex">
+                        <img
+                          src="assets/imgs/main/image-3.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/imgs/main/image-7.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                      </div>
                     </div>
 
-                    <div class="m-0 d-flex">
-                      <img src="assets/imgs/main/image-3.jpg" width="30px" alt="" />
-                      <img src="assets/imgs/main/image-7.jpg" width="30px" alt="" />
+                    <div>
+                      <p
+                        class="p-0 m-0"
+                        style="font-size: 16px; padding-right: 60px !important"
+                      >
+                        early stage emily syndrome <span>(sett-ott 2022)</span>
+                      </p>
                     </div>
                   </div>
+                </div> -->
 
-                  <div>
-                    <p class="p-0 m-0" style="font-size: 16px; padding-right: 60px !important">
-                      early stage emily syndrome <span>(sett-ott 2022)</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <!-- <div class="col-sm-6 col-xl-4">
+                  <div class="d-flex align-items-center bg-black p-0">
+                    <div class="me-3">
+                      <div class="d-flex m-0">
+                        <img
+                          src="assets/imgs/main/image-15.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/imgs/main/image-9.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                      </div>
 
-              <div class="col-sm-6 col-xl-4">
-                <div class="d-flex align-items-center bg-black p-0">
-                  <div class="me-3">
-                    <div class="d-flex m-0">
-                      <img src="assets/imgs/main/image-15.jpg" width="30px" alt="" />
-                      <img src="assets/imgs/main/image-9.jpg" width="30px" alt="" />
+                      <div class="m-0 d-flex">
+                        <img
+                          src="assets/imgs/main/image-1.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/imgs/main/image-17.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                      </div>
                     </div>
 
-                    <div class="m-0 d-flex">
-                      <img src="assets/imgs/main/image-1.jpg" width="30px" alt="" />
-                      <img src="assets/imgs/main/image-17.jpg" width="30px" alt="" />
+                    <div>
+                      <p class="p-0 m-0" style="font-size: 16px">
+                        Be the Young
+                      </p>
                     </div>
                   </div>
+                </div> -->
 
-                  <div>
-                    <p class="p-0 m-0" style="font-size: 16px">
-                      Be the Young
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <!-- <div class="col-sm-6 col-xl-4">
+                  <div class="d-flex bg-black align-items-center">
+                    <div class="me-3">
+                      <div class="d-flex m-0">
+                        <img
+                          src="assets/imgs/main/image-19.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/imgs/main/image-16.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                      </div>
 
-              <div class="col-sm-6 col-xl-4">
-                <div class="d-flex bg-black align-items-center">
-                  <div class="me-3">
-                    <div class="d-flex m-0">
-                      <img src="assets/imgs/main/image-19.jpg" width="30px" alt="" />
-                      <img src="assets/imgs/main/image-16.jpg" width="30px" alt="" />
+                      <div class="m-0 d-flex">
+                        <img
+                          src="assets/imgs/main/image-5.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/imgs/main/image-15.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                      </div>
                     </div>
 
-                    <div class="m-0 d-flex">
-                      <img src="assets/imgs/main/image-5.jpg" width="30px" alt="" />
-                      <img src="assets/imgs/main/image-15.jpg" width="30px" alt="" />
+                    <div>
+                      <p class="p-0 m-0" style="font-size: 17px">
+                        saggio vibes💃🔳🚲
+                      </p>
                     </div>
                   </div>
+                </div> -->
 
-                  <div>
-                    <p class="p-0 m-0" style="font-size: 17px">
-                      saggio vibes💃🔳🚲
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-xl-4">
-                <div class="d-flex bg-black align-items-center">
-                  <div class="me-3">
-                    <img src="assets/imgs/main/image-15.jpg" width="60px" alt="" />
-                  </div>
-
-                  <div>
-                    <p class="p-0 m-0" style="font-size: 17px">
-                      Brani che ti piacciono
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-xl-4">
-                <div class="d-flex bg-black align-items-center">
-                  <div class="me-3">
-                    <div class="d-flex m-0">
-                      <img src="assets/imgs/search/image-34.jpg" width="30px" alt="" />
-                      <img src="assets/imgs/search/image-17.jpg" width="30px" alt="" />
+              <!-- <div class="col-sm-6 col-xl-4">
+                  <div class="d-flex bg-black align-items-center">
+                    <div class="me-3">
+                      <img
+                        src="assets/imgs/main/image-15.jpg"
+                        width="60px"
+                        alt=""
+                      />
                     </div>
 
-                    <div class="m-0 d-flex">
-                      <img src="assets/imgs/search/image-1.jpeg" width="30px" alt="" />
-                      <img src="assets/imgs/search/image-35.jpg" width="30px" alt="" />
+                    <div>
+                      <p class="p-0 m-0" style="font-size: 17px">
+                        Brani che ti piacciono
+                      </p>
                     </div>
                   </div>
+                </div> -->
 
-                  <div>
-                    <p class="p-0 m-0" style="font-size: 17px">2021 lol</p>
-                  </div>
-                </div>
-              </div>
+              <!-- <div class="col-sm-6 col-xl-4">
+                  <div class="d-flex bg-black align-items-center">
+                    <div class="me-3">
+                      <div class="d-flex m-0">
+                        <img
+                          src="assets/imgs/search/image-34.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/imgs/search/image-17.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                      </div>
 
-              <div class="col-sm-6 col-xl-4">
-                <div class="d-flex bg-black align-items-center">
-                  <div class="me-3">
-                    <div class="d-flex m-0">
-                      <img src="assets/imgs/search/image-26.jpg" width="30px" alt="" />
-                      <img src="assets/imgs/search/image-36.jpg" width="30px" alt="" />
+                      <div class="m-0 d-flex">
+                        <img
+                          src="assets/imgs/search/image-1.jpeg"
+                          width="30px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/imgs/search/image-35.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                      </div>
                     </div>
 
-                    <div class="m-0 d-flex">
-                      <img src="assets/imgs/search/image-25.jpeg" width="30px" alt="" />
-                      <img src="assets/imgs/main/image-15.jpg" width="30px" alt="" />
+                    <div>
+                      <p class="p-0 m-0" style="font-size: 17px">2021 lol</p>
                     </div>
                   </div>
+                </div> -->
 
-                  <div>
-                    <p class="p-0 m-0" style="font-size: 17px">
-                      Deep Dive with Ali Abdaal
-                    </p>
+              <!-- <div class="col-sm-6 col-xl-4">
+                  <div class="d-flex bg-black align-items-center">
+                    <div class="me-3">
+                      <div class="d-flex m-0">
+                        <img
+                          src="assets/imgs/search/image-26.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/imgs/search/image-36.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="m-0 d-flex">
+                        <img
+                          src="assets/imgs/search/image-25.jpeg"
+                          width="30px"
+                          alt=""
+                        />
+                        <img
+                          src="assets/imgs/main/image-15.jpg"
+                          width="30px"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="p-0 m-0" style="font-size: 17px">
+                        Deep Dive with Ali Abdaal
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </div> -->
             </div>
           </div>
 
-          <div class="container p-0 mb-5 mt-5">
-            <div class="row align-items-end">
-              <h4 class="text-white mb-4">Altro di ciò che ti piace</h4>
-              <div class="col m-0 pe-3">
-                <div class="card text-start p-3 bg-dark text-white">
-                  <img src="assets/imgs/search/image-9.jpg" class="card-img-top img-fluid rounded" alt="..." />
+            <div class="container p-0 mb-5 mt-5">
+              <div class="row align-items-end">
+                <h4 class="text-white mb-4">Altro di ciò che ti piace</h4>
+                <div class="col m-0 pe-3">
+                  <div class="card text-start p-3 bg-dark text-white">
+                    <img
+                      src="assets/imgs/search/image-9.jpg"
+                      class="card-img-top img-fluid rounded"
+                      alt="..."
+                    />
 
                   <div class="card-body">
                     <h5 class="card-title fs-5">Hot Hits</h5>
@@ -551,6 +603,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
