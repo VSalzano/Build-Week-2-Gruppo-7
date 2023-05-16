@@ -1,3 +1,4 @@
+/* SIDEBAR SX */
 ul {
     list-style-type: none;
     font-style: "Circular";
@@ -18,4 +19,22 @@ li {
     font-size: 14px;
     color: #767676;
     line-height: 2;
+}
+
+/* SIDEBAR DX */
+
+h6 {
+    font-style: "Circular";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px !important;
+    color: #A3ADA0 !important;
+}
+
+p {
+    font-style: "Circular";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: #767676;
 }
