@@ -1,5 +1,5 @@
 const ENDPOINT =
-  "https://striveschool-api.herokuapp.com/api/deezer/search?q=rock";
+  "https://striveschool-api.herokuapp.com/api/deezer/search?q=queen";
 let header = document.getElementById("main");
 let featured = document.getElementById("featured");
 
@@ -29,7 +29,7 @@ fetch(ENDPOINT)
                   <h1 class="fs-1"><a href="#">${albums.data[3].album.title}</a></h1>
                 </div>
 
-                <a href="#">${albums.data[3].artist.name}</a>
+                <a href="./artist-page.html?artistId=${albums.data[3].artist.id}">${albums.data[3].artist.name}</a>
 
 
                 <div class="d-flex align-items-center">
