@@ -32,8 +32,6 @@ fetch(ENDPOINT)
                 
                 <div>
 
-               
-                
                   <h1 class="fs-1"><a href="#">${albums.data[3].album.title}</a></h1>
                 </div>
 
