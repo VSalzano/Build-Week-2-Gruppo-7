@@ -29,10 +29,10 @@ fetch(ENDPOINT)
                   <h1 class="fs-1"><a href="#">${albums.data[3].album.title}</a></h1>
                 </div>
 
-                <a href="#">${albums.data[3].artist.name}</a>
+                <a class="fs-5 text-white" href="#">${albums.data[3].artist.name}</a>
 
 
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center mt-5">
                   <button
                     class="btn me-5 bg-success rounded-pill ps-4 pe-4"
                     type="submit"
@@ -53,7 +53,14 @@ fetch(ENDPOINT)
     </div>
     `;
 
+ 
+  
+  
+
     header.appendChild(currentAlbum);
+    let ancora = document.querySelector("h1 a");
+    console.log(ancora);
+    ancora.classList.add("fss")
 
     function getRandomElements(array, numElements) {
       const shuffledArray = array.slice(); // Copia dell'array originale
