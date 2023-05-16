@@ -32,7 +32,7 @@ fetch(ENDPOINT)
                 <a href="./artist-page.html?artistId=${albums.data[3].artist.id}">${albums.data[3].artist.name}</a>
 
 
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center mt-5">
                   <button
                     class="btn me-5 bg-success rounded-pill ps-4 pe-4"
                     type="submit"
@@ -54,6 +54,9 @@ fetch(ENDPOINT)
     `;
 
     header.appendChild(currentAlbum);
+    let ancora = document.querySelector("h1 a");
+    console.log(ancora);
+    ancora.classList.add("fss");
 
     function getRandomElements(array, numElements) {
       const shuffledArray = array.slice();

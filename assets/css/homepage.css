@@ -1,0 +1,44 @@
+ul{
+    list-style-type: none; 
+}
+
+a{ 
+    text-decoration: none !important;
+    
+}
+
+.fss{
+    font-size: 4rem;
+    color: white;
+}
+
+i{
+    margin-right: 15px;
+}
+
+.page{
+    
+    background-color: #202020;
+}
+
+.info{
+    background: rgb(5,5,5);
+background: linear-gradient(90deg, rgba(5,5,5,1) 0%, rgba(30,30,30,1) 100%);
+}
+
+.play{
+    background-color: #1ED760 !important;
+}
+
+.album{
+    font-size: 12px !important;
+}
+
+#main{
+    font-family: 'Inter', sans-serif;
+}
+
+#main h1{
+    font-size: 4rem !important;
+    font-weight: bold;
+}
