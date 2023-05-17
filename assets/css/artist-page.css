@@ -37,4 +37,25 @@ p {
     font-weight: 300;
     font-size: 11px;
     color: #767676;
+
+}
+
+.contenitoredx p {
+    line-height: 0.5;
+}
+
+/* CENTER PAGE */
+.miPiace {
+    font-size: 12px;
+}
+
+.di {
+    font-size: 12px;
+}
+
+#favorite-band {
+    color: #767676;
+    padding-left: 5px;
+    font-size: 12px;
+
 }

@@ -55,19 +55,19 @@ fetch(POPULARS)
     popTracks.data.forEach((track) => {
       let item = document.createElement("div");
 
-      item.classList.add("d-flex", "mt-3");
+      item.classList.add("d-flex", "mt-3","ps-5");
       item.innerHTML = `
-                <div class="col-1">${cont}</div>
-                <div class="col-5">
-                  <img
-                    style="height: 30px"
+                <div class="col-1 text-secondary">${cont}</div>
+                <div class="col-8">
+                  <img class="pe-3"
+                    style="height: 40px"
                     src="${track.album.cover_small}"
                     alt="album cover"
                   />
                 ${track.title_short} ${track.title_version}
                 </div>
-                <div class="col-4">${track.rank}</div>
-                <div class="col-2">${convertTime(track.duration)}</div>
+                <div class="col-2 text-secondary">${track.rank}</div>
+                <div class="col-1 text-secondary">${convertTime(track.duration)}</div>
                 `;
       trackContainer.appendChild(item);
       cont++;
