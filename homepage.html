@@ -17,7 +17,7 @@
 <body>
   <div class="container-fluid m-0">
     <div class="row">
-      <div class="col-3 d-flex bg-black flex-column ps-4">
+      <div id="left" class="col-3 d-xl-block d-flex bg-black flex-column ps-4">
         <a class="text-light mt-2" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
             fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
             <path
@@ -84,7 +84,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-7 px-0">
+      <div id="center" class="col-7 px-0">
         <div id="full" class="container-fluid ps-4 pe-4 pb-5">
           <div id="arrows" class="mb-3 pt-3 d-flex justify-content-between">
             <div>
@@ -163,16 +163,25 @@
               </div> -->
             </div>
 
-          <div class="container-fluid p-0 text-white ">
+          <div id="listen" class="container-fluid p-0 text-white ">
             <div class="d-flex justify-content-between align-items-center mb-4">
               <h2 class="text-white mb-1">Buonasera</h2>
-              <div>
+              <div id="icons" class="d-sm-none me-3">
                 <a href="#"><i class="fa-solid fa-bell"></i></a>
                 <a href="#"><i class="fa-solid fa-clock-rotate-left"></i></a>
                 <a href="#"><i class="fa-solid fa-gear"></i></a>
-              
               </div>
-              
+
+            </div>
+
+            <div class="d-flex d-sm-none mb-4">
+              <p  class="me-5">
+                Musica
+              </p>
+
+              <p>
+                Podcast e Show
+              </p>
             </div>
             
             <div id="featured" class="row g-4 justify-content-between align-items-center">
@@ -456,7 +465,7 @@
         </div>
       </div>
 
-      <div class="col-2 bg-black py-4">
+      <div id="amici" class="col-2 bg-black py-4 ">
         <div class="d-flex justify-content-between text-light ps-3">
           <div>
             <h5>Attività amici</h5>

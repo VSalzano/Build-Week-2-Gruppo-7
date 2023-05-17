@@ -63,3 +63,43 @@ background: linear-gradient(90deg, rgba(5,5,5,1) 0%, rgba(30,30,30,1) 100%);
 }
 
 
+@media only screen and (max-width: 574px) {
+    #left{
+        display: none !important;
+    }
+
+    #amici{
+        display: none !important;
+    }
+
+    #center{
+        width: 100%;
+        padding: 0;
+    }
+
+    
+    #main{
+        display: none;
+        margin-top: 50px !important;
+    }
+
+    #arrows{
+        display: none !important;
+    }
+
+    #listen{
+        padding-top: 50px !important;
+    }
+
+    #featured{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 0.9rem;
+    }
+
+    #elements{
+        background-color: #171717 !important;
+    }
+    
+}
+

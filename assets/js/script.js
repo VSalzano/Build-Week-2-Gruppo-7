@@ -96,7 +96,7 @@ fetch(ENDPOINT)
       col.classList.add("col-sm-6", "col-xl-4");
       col.innerHTML = `
 
-        <div class="d-flex bg-dark rounded align-items-center pt-0 ">
+        <div id="elements" class="d-flex bg-dark rounded align-items-center pt-0 ">
           <div class="me-3">
             <img
               src="${randomAlbum.album.cover_small}"
