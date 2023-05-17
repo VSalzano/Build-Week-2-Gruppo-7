@@ -1,0 +1,44 @@
+/* SIDEBAR SX */
+ul {
+    list-style-type: none;
+    font-style: "Circular";
+    font-style: normal;
+    font-weight: 300;
+    overflow: auto;
+    height: 900px;
+}
+
+a {
+    text-decoration: none !important;
+    line-height: 2;
+    font-size: 15px;
+    color: #A3ADA0 !important;
+}
+
+li {
+    font-size: 14px;
+    color: #767676;
+    line-height: 2;
+}
+
+/* SIDEBAR DX */
+
+h6 {
+    font-style: "Circular";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px !important;
+    color: #A3ADA0 !important;
+}
+
+p {
+    font-style: "Circular";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: #767676;
+}
+
+.contenitoredx p {
+    line-height: 0.5;
+}
