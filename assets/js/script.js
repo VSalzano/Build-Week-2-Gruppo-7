@@ -16,31 +16,35 @@ fetch(ENDPOINT)
     let currentAlbum = document.createElement("div");
     currentAlbum.innerHTML = `
     <div class="d-flex">
-    <div>
-        <img
-        class="p-0 me-3"
-        src="${albums.data[3].album.cover_medium}"        
-                  alt="album cover"
+
+              <div class="me-5" >
+                <img
+                class="p-0 me-3 img-fluid"
+                src="${albums.data[2].album.cover_medium}"        
+                          alt="album cover"
                 />
+                
               </div>
               
-              <div>
+              <div class="w-100">
                 <div class="d-flex justify-content-between">
-                  <p class="p-0 m-0 fs-6 mb-2">ALBUM</p>
-                  <button class="border border-dark bg-dark text-secondary rounded-pill p-1 ps-3 pe-3 mt-2 fs-6 me-5">NASCONDI ANNUNCI</button>
+                  <p class="p-0 m-0 fs-6">ALBUM</p>
+                  <button class="border border-dark bg-dark text-secondary mt-2 me-5 rounded-pill ">NASCONDI ANNUNCI</button>
+                  
                 </div>
+
+                
                 
                 <div>
-
                   <h1 class="fs-1"><a href="#">${albums.data[3].album.title}</a></h1>
                 </div>
 
-                <a href="./artist-page.html?artistId=${albums.data[3].artist.id}">${albums.data[3].artist.name}</a>
+                <a class="text-white fs-6" href="./artist-page.html?artistId=${albums.data[3].artist.id}">${albums.data[3].artist.name}</a>
 
 
-                <div class="d-flex align-items-center mt-5">
+                <div class="d-flex align-items-center mt-3">
                   <button id="catch"
-                    class="btn me-3  rounded-pill ps-4 pe-4"
+                    class="btn me-3 border rounded-pill ps-4 pe-4"
                     type="submit"
                   >
                     Play
@@ -54,15 +58,21 @@ fetch(ENDPOINT)
                   </button>
 
                   <i class="fa-sharp fa-solid fa-ellipsis fs-4"></i>
-                </div>
+              </div>
+
+                
     </div>
-    </div>
+    
     `;
 
     header.appendChild(currentAlbum);
     let ancora = document.querySelector("h1 a");
     console.log(ancora);
     ancora.classList.add("fss");
+
+    let back = document.getElementById("catch");
+    console.log(back);
+    back.classList.add("play")
 
     function getRandomElements(array, numElements) {
       const shuffledArray = array.slice();

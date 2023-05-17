@@ -8,7 +8,7 @@ a{
 }
 
 .fss{
-    font-size: 4rem;
+    
     color: white;
    
 }
@@ -31,7 +31,7 @@ i{
 background: linear-gradient(90deg, rgba(5,5,5,1) 0%, rgba(30,30,30,1) 100%);
 }
 
-#play{
+.play{
     background-color: #1ED760 !important;
 }
 
@@ -40,7 +40,8 @@ background: linear-gradient(90deg, rgba(5,5,5,1) 0%, rgba(30,30,30,1) 100%);
 }
 
 #main{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: bold;
 }
 
 #main h1{
