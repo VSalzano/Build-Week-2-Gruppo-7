@@ -397,16 +397,17 @@
             </div>
         </div>
     </div>
+    <!-- --------------------------------------------------------PLAYER---------------------------------------------------- -->
     <div id="player" class="bg-dark text-light fixed-bottom border-top border-light">
         <div class="d-flex p-3 justify-content-between align-items-center">
             <div class="d-flex align-items-center">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/imgs/main/image-1.jpg" alt="Logo" width="75" height="75"
+                    <img id="cover-onplay" src="assets/imgs/main/image-1.jpg" alt="Logo" width="75" height="75"
                         class="d-inline-block align-text-top" />
                 </a>
                 <div class="d-flex flex-column justify-content-center ms-3">
-                    <p class="m-0 fw-bold">CASA</p>
-                    <p class="m-0">Neima Ezza</p>
+                    <p id="title-onplay" class="m-0 fw-bold">CASA</p>
+                    <p id="artist-onplay" class="m-0">Neima Ezza</p>
                 </div>
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -429,12 +430,14 @@
                         <path
                             d="M267.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160L64 241V96c0-17.7-14.3-32-32-32S0 78.3 0 96V416c0 17.7 14.3 32 32 32s32-14.3 32-32V271l11.5 9.6 192 160z" />
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"
+                    <div id="play-btn" disabled>
+                       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"
                         fill="currentColor" class="mx-1">
                         <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                         <path
                             d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9V344c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z" />
-                    </svg>
+                    </svg> 
+                    </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 320 512"
                         fill="currentColor" class="mx-1">
                         <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
