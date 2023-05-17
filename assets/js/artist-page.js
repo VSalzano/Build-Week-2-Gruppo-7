@@ -10,13 +10,13 @@ let trackContainer = document.getElementById("track-container");
 let favImg = document.getElementById("favorite-img");
 let favBand = document.getElementById("favorite-band");
 
-function convertTime(seconds) {
+const converTime = (seconds) => {
   let minutes = Math.floor(seconds / 60);
   let remainingSeconds = seconds % 60;
   let formattedSeconds =
     remainingSeconds < 10 ? "0" + remainingSeconds : remainingSeconds;
   return `${minutes} : ${formattedSeconds}`;
-}
+};
 
 fetch(ARTIST_ENDPOINT + artistId)
   .then((res) => {
@@ -55,7 +55,7 @@ fetch(POPULARS)
     popTracks.data.forEach((track) => {
       let item = document.createElement("div");
 
-      item.classList.add("d-flex", "mt-3","ps-5");
+      item.classList.add("d-flex", "mt-3", "ps-5");
       item.innerHTML = `
                 <div class="col-1 text-secondary">${cont}</div>
                 <div class="col-8">
@@ -67,7 +67,9 @@ fetch(POPULARS)
                 ${track.title_short} ${track.title_version}
                 </div>
                 <div class="col-2 text-secondary">${track.rank}</div>
-                <div class="col-1 text-secondary">${convertTime(track.duration)}</div>
+                <div class="col-1 text-secondary">${convertTime(
+                  track.duration
+                )}</div>
                 `;
       trackContainer.appendChild(item);
       cont++;
