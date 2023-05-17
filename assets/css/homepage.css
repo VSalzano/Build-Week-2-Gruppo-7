@@ -1,49 +1,85 @@
-ul{
-    list-style-type: none; 
+/* SIDEBAR SX */
+ul {
+    list-style-type: none;
+    font-style: "Circular";
+    font-style: normal;
+    font-weight: 300;
+    overflow: auto;
+    height: 900px;
 }
 
-a{ 
+a {
     text-decoration: none !important;
-    
+    line-height: 2;
+    font-size: 15px;
+    color: #A3ADA0 !important;
 }
 
-.fss{
+li {
+    font-size: 14px;
+    color: #767676;
+    line-height: 2;
+}
+
+/* CENTER PAGE */
+.fss {
     font-size: 4rem;
     color: white;
-   
 }
 
-#full{
+#full {
     background-color: #171717;
 }
 
-i{
+i {
     margin-right: 15px;
 }
 
-.page{
-    
+.page {
     background-color: #202020;
 }
 
-.info{
-    background: rgb(5,5,5);
-background: linear-gradient(90deg, rgba(5,5,5,1) 0%, rgba(30,30,30,1) 100%);
+.info {
+    background: rgb(5, 5, 5);
+    background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgba(30, 30, 30, 1) 100%);
 }
 
-#play{
+#play {
     background-color: #1ED760 !important;
 }
 
-.album{
+.album {
     font-size: 12px !important;
 }
 
-#main{
+#main {
     font-family: 'Inter', sans-serif;
 }
 
-#main h1{
+#main h1 {
     font-size: 4rem !important;
     font-weight: bold;
+}
+
+/* SIDEBAR DX */
+
+
+h6 {
+    font-style: "Circular";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px !important;
+    color: #A3ADA0 !important;
+}
+
+p {
+    font-style: "Circular";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: #767676;
+}
+
+.contenitoredx p {
+    line-height: 0.5;
 }
