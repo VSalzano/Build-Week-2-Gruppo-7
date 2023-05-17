@@ -119,7 +119,13 @@ fetch(ALBUM_ENDPOINT + albumId)
     singleAlbum.tracks.data.forEach((track) => {
       console.log(track);
       let item = document.createElement("div");
-      item.classList.add("row", "align-items-center", "px-4", "mt-3");
+      item.classList.add(
+        "row",
+        "align-items-center",
+        "px-4",
+        "mt-3",
+        "single-track"
+      );
       item.innerHTML = `
     <div class="col-1">
         <p id="track-n" class="text-light my-0">${cont}</p>
