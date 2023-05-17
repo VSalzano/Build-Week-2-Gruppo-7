@@ -7,7 +7,7 @@ const renderSearchParameter = function (searched) {
 
 const startMusic = function (albums) {
   let songsFields = document.querySelectorAll(".play-me");
-  let audio = false;
+  let audio;
   let play;
   for (let i = 0; i < songsFields.length; i++) {
     audio = false;
