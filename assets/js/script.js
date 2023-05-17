@@ -1,5 +1,5 @@
 const ENDPOINT =
-  "https://striveschool-api.herokuapp.com/api/deezer/search?q=rock";
+  "https://striveschool-api.herokuapp.com/api/deezer/search?q=rap";
 let header = document.getElementById("main");
 let featured = document.getElementById("featured");
 
@@ -30,13 +30,10 @@ fetch(ENDPOINT)
                 <div class="d-flex justify-content-between">
                   <p class="p-0 m-0 fs-6">ALBUM</p>
                   <button class="border border-dark bg-dark text-secondary mt-2 me-5 rounded-pill ">NASCONDI ANNUNCI</button>
-                  
                 </div>
 
-                
-                
                 <div>
-                  <h1 class="fs-1"><a href="#">${albums.data[3].album.title}</a></h1>
+                  <h1 class="fs-1"><a href="./album-page.html?albumId=${albums.data[2].album.id}">${albums.data[3].album.title}</a></h1>
                 </div>
 
                 <a class="text-white fs-6" href="./artist-page.html?artistId=${albums.data[3].artist.id}">${albums.data[3].artist.name}</a>
