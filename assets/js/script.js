@@ -1,20 +1,20 @@
 const ENDPOINT =
- "https://striveschool-api.herokuapp.com/api/deezer/search?q=rock";
+  "https://striveschool-api.herokuapp.com/api/deezer/search?q=queen";
 let header = document.getElementById("main");
 let featured = document.getElementById("featured");
 
 fetch(ENDPOINT)
- .then((res) => {
-  if (res.ok) {
-   return res.json();
-  } else {
-   throw new Error("Error fetching album");
-  }
- })
- .then((albums) => {
-  console.log(albums.data);
-  let currentAlbum = document.createElement("div");
-  currentAlbum.innerHTML = `
+  .then((res) => {
+    if (res.ok) {
+      return res.json();
+    } else {
+      throw new Error("Error fetching album");
+    }
+  })
+  .then((albums) => {
+    console.log(albums.data);
+    let currentAlbum = document.createElement("div");
+    currentAlbum.innerHTML = `
     <div class="d-flex">
     <div>
         <img
@@ -59,29 +59,32 @@ fetch(ENDPOINT)
     </div>
     `;
 
-  header.appendChild(currentAlbum);
-  let ancora = document.querySelector("h1 a");
-  console.log(ancora);
-  ancora.classList.add("fss");
+    header.appendChild(currentAlbum);
+    let ancora = document.querySelector("h1 a");
+    console.log(ancora);
+    ancora.classList.add("fss");
 
-  function getRandomElements(array, numElements) {
-   const shuffledArray = array.slice();
+    function getRandomElements(array, numElements) {
+      const shuffledArray = array.slice();
 
-   for (let i = shuffledArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-   }
+      for (let i = shuffledArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledArray[i], shuffledArray[j]] = [
+          shuffledArray[j],
+          shuffledArray[i],
+        ];
+      }
 
-   return shuffledArray.slice(0, numElements);
-  }
+      return shuffledArray.slice(0, numElements);
+    }
 
-  const randomAlbums = getRandomElements(albums.data, 6);
-  console.log(randomAlbums);
+    const randomAlbums = getRandomElements(albums.data, 6);
+    console.log(randomAlbums);
 
-  randomAlbums.forEach((randomAlbum) => {
-   let col = document.createElement("div");
-   col.classList.add("col-sm-6", "col-xl-4");
-   col.innerHTML = `
+    randomAlbums.forEach((randomAlbum) => {
+      let col = document.createElement("div");
+      col.classList.add("col-sm-6", "col-xl-4");
+      col.innerHTML = `
 
         <div class="d-flex bg-dark rounded align-items-center pt-0 ">
           <div class="me-3">
@@ -98,9 +101,9 @@ fetch(ENDPOINT)
 
         `;
 
-   featured.appendChild(col);
+      featured.appendChild(col);
+    });
+  })
+  .catch((err) => {
+    console.log(err);
   });
- })
- .catch((err) => {
-  console.log(err);
- });

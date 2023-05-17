@@ -1,3 +1,4 @@
+
 /* SIDEBAR SX */
 ul {
     list-style-type: none;
@@ -41,4 +42,15 @@ p {
 
 .contenitoredx p {
     line-height: 0.5;
+}
+
+.single-track {
+    transition: 200ms;
+    margin: 0 1em;
+    border-radius: 10px;
+}
+
+.single-track:hover {
+    transition: 200ms;
+    background-color: rgba(214, 208, 208, 0.158);
 }
