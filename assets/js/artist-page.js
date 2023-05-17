@@ -10,7 +10,7 @@ let trackContainer = document.getElementById("track-container");
 let favImg = document.getElementById("favorite-img");
 let favBand = document.getElementById("favorite-band");
 
-const converTime = (seconds) => {
+const convertTime = (seconds) => {
   let minutes = Math.floor(seconds / 60);
   let remainingSeconds = seconds % 60;
   let formattedSeconds =
