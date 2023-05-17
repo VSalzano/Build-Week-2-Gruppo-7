@@ -25,6 +25,7 @@ li {
 .fss {
     font-size: 4rem;
     color: white;
+    line-height: 0;
 }
 
 #full {

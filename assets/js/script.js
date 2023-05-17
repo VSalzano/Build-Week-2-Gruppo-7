@@ -1,5 +1,5 @@
 const ENDPOINT =
-  "https://striveschool-api.herokuapp.com/api/deezer/search?q=queen";
+  "https://striveschool-api.herokuapp.com/api/deezer/search?q=love";
 let header = document.getElementById("main");
 let featured = document.getElementById("featured");
 
@@ -15,47 +15,34 @@ fetch(ENDPOINT)
     console.log(albums.data);
     let currentAlbum = document.createElement("div");
     currentAlbum.innerHTML = `
-    <div class="d-flex">
-    <div>
-        <img
-        class="p-0 me-3"
-        src="${albums.data[3].album.cover_medium}"        
-                  alt="album cover"
-                />
-              </div>
-              
-              <div>
+    <div class="d-flex w-100">
+      <div>
+          <img class="p-0 me-3" src="${albums.data[3].album.cover_medium}" alt="album cover"/>
+      </div>
+                
+              <div class="w-100">
                 <div class="d-flex justify-content-between">
                   <p class="p-0 m-0 fs-6 mb-2">ALBUM</p>
                   <button class="border border-dark bg-dark text-secondary rounded-pill p-1 ps-3 pe-3 mt-2 fs-6 me-5">NASCONDI ANNUNCI</button>
                 </div>
                 
                 <div>
-
                   <h1 class="fs-1"><a href="./album-page.html?albumId=${albums.data[3].album.id}">${albums.data[3].album.title}</a></h1>
                 </div>
 
                 <a href="./artist-page.html?artistId=${albums.data[3].artist.id}">${albums.data[3].artist.name}</a>
 
-
-                <div class="d-flex align-items-center mt-5">
+                <div class="d-flex align-items-center mt-1">
                   <button id="catch"
-                    class="btn me-3  rounded-pill ps-4 pe-4"
-                    type="submit"
-                  >
-                    Play
-                  </button>
+                    class="btn me-3 bg-success rounded-pill ps-4 pe-4"
+                    type="submit">Play</button>
 
                   <button
                     class="btn me-5 rounded-pill ps-4 pe-4 text-white border-secondary"
-                    type="submit"
-                  >
-                    Salva
-                  </button>
+                    type="submit">Salva</button>
 
                   <i class="fa-sharp fa-solid fa-ellipsis fs-4"></i>
                 </div>
-    </div>
     </div>
     `;
 
