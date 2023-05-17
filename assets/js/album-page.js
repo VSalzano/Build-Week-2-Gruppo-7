@@ -1,6 +1,6 @@
 const ALBUM_ENDPOINT =
   "https://striveschool-api.herokuapp.com/api/deezer/album/";
-  "https://striveschool-api.herokuapp.com/api/deezer/album/";
+("https://striveschool-api.herokuapp.com/api/deezer/album/");
 
 let addressBarContent = new URLSearchParams(window.location.search);
 let albumId = addressBarContent.get("albumId");
@@ -87,19 +87,9 @@ const convertTime = (seconds) => {
   let formattedSeconds =
     remainingSeconds < 10 ? "0" + remainingSeconds : remainingSeconds;
   return `${minutes} mins ${formattedSeconds} sec`;
-  let minutes = Math.floor(seconds / 60);
-  let remainingSeconds = seconds % 60;
-  let formattedSeconds =
-    remainingSeconds < 10 ? "0" + remainingSeconds : remainingSeconds;
-  return `${minutes} mins ${formattedSeconds} sec`;
 };
 
 const trackTime = (seconds) => {
-  let minutes = Math.floor(seconds / 60);
-  let remainingSeconds = seconds % 60;
-  let formattedSeconds =
-    remainingSeconds < 10 ? "0" + remainingSeconds : remainingSeconds;
-  return `${minutes} : ${formattedSeconds}`;
   let minutes = Math.floor(seconds / 60);
   let remainingSeconds = seconds % 60;
   let formattedSeconds =
@@ -123,23 +113,7 @@ fetch(ALBUM_ENDPOINT + albumId)
     year.innerHTML = singleAlbum.release_date;
     tracks.innerHTML = singleAlbum.nb_tracks;
     albumDuration.innerHTML = convertTime(singleAlbum.duration);
-  .then((res) => {
-    if (res.ok) {
-      return res.json();
-    } else {
-      throw new Error("ERROR FETCHING ALBUM");
-    }
-  })
-  .then((singleAlbum) => {
-    console.log(singleAlbum);
-    albumTitle.innerHTML = singleAlbum.title;
-    albumCover.src = `${singleAlbum.cover_medium}`;
-    artistName.innerHTML = singleAlbum.artist.name;
-    year.innerHTML = singleAlbum.release_date;
-    tracks.innerHTML = singleAlbum.nb_tracks;
-    albumDuration.innerHTML = convertTime(singleAlbum.duration);
 
-    cont = 1;
     cont = 1;
 
     singleAlbum.tracks.data.forEach((track) => {
@@ -157,7 +131,6 @@ fetch(ALBUM_ENDPOINT + albumId)
             ${track.title}
         </div>
         <a href="./artist-page.html?artistId=${
-          track.artist.id
           track.artist.id
         }" class="text-light my-0 d-block">${track.artist.name}</a>
     </div>
