@@ -82,6 +82,10 @@ i {
         font-family: 'Inter', sans-serif !important;
     }
 
+    #listen h2{
+        font-size: 1.8rem;
+    }
+
     #left {
         display: none !important;
     }
@@ -141,11 +145,12 @@ i {
     .playlist{
         font-size: 1.1rem;
         color: aqua !important;
+       
         
     }
 
     .tendence{
-        font-size: 1.3rem;
+        font-size: 5rem;
         
     }
 
@@ -154,13 +159,112 @@ i {
     }
 
     .heart i{
-        background-color: green !important;
+        color: green !important;
         
     }
 
+   #pos{
+    position: absolute;
+    bottom: 50px;
+    
+   }
+
+   .tristi{
+    margin-left: 30px;
+   }
+
+   
 }
 
 
+@media only screen and (min-width: 575px) and (max-width: 800px) {
+    body{
+        font-family: 'Inter', sans-serif !important;
+    }
+
+    #left {
+        display: none !important;
+    }
+
+    #amici {
+        display: none !important;
+    }
+
+    #center {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    #main {
+        display: none;
+        margin-top: 50px !important;
+    }
+
+    #arrows {
+        display: none !important;
+    }
+
+    #listen {
+        padding-top: 50px !important;
+    }
+
+    #featured {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 0.9rem;
+    }
+
+    #elements {
+        background-color: #171717 !important;
+    }
+
+    #altro{
+        display: none;
+    }
+
+    #canzoni{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .write{
+        display: flex;
+    }
+
+    .image{
+        margin-right: 30px;
+        
+    }
+
+    .playlist{
+        font-size: 1.1rem;
+        color: aqua !important;
+       
+        
+    }
+
+    .tendence{
+        font-size: 5rem;
+        
+    }
+
+    .ico{
+        display: block;
+    }
+
+    .heart i{
+        color: green !important;
+        
+    }
+
+   #pos{
+    position: absolute;
+    bottom: 50px;
+    
+   }
+}
 
 /* SIDEBAR DX */
 
