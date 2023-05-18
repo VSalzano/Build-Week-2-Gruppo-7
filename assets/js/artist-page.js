@@ -1,5 +1,5 @@
 const ARTIST_ENDPOINT =
-  "https://striveschool-api.herokuapp.com/api/deezer/artist/";
+ "https://striveschool-api.herokuapp.com/api/deezer/artist/";
 
 let addressBarContent = new URLSearchParams(window.location.search);
 let artistId = addressBarContent.get("artistId");
@@ -79,11 +79,11 @@ const player = function (albums) {
 };
 
 function convertTime(seconds) {
-  let minutes = Math.floor(seconds / 60);
-  let remainingSeconds = seconds % 60;
-  let formattedSeconds =
-    remainingSeconds < 10 ? "0" + remainingSeconds : remainingSeconds;
-  return `${minutes} : ${formattedSeconds}`;
+ let minutes = Math.floor(seconds / 60);
+ let remainingSeconds = seconds % 60;
+ let formattedSeconds =
+  remainingSeconds < 10 ? "0" + remainingSeconds : remainingSeconds;
+ return `${minutes} : ${formattedSeconds}`;
 }
 
 fetch(ARTIST_ENDPOINT + artistId)
@@ -119,26 +119,43 @@ fetch(POPULARS)
   .then((popTracks) => {
     console.log(popTracks);
 
+  let cont = 1;
+  popTracks.data.forEach((track) => {
+   let item = document.createElement("div");
     let cont = 1;
     popTracks.data.forEach((track) => {
       let item = document.createElement("div");
       console.log(track);
 
-      item.classList.add("d-flex", "mt-3", "ps-5");
+      item.classList.add(
+        "d-flex",
+        "my-2",
+        "ps-3",
+        "ps-lg-5",
+        "flex-wrap",
+        "align-items-center"
+      );
       item.innerHTML = `
                 <div class="col-1 text-secondary">${cont}</div>
-                <div data-effetto-audio="${
-                  track.preview
-                }" class="col-8 play-me">
-                  <img class="pe-3"
-                    style="height: 40px"
-                    src="${track.album.cover_small}"
-                    alt="album cover"
-                  />
-                ${track.title_short} ${track.title_version}
+                <div class="col-10 d-flex align-items-center">
+                  <div>
+                    <img class="pe-3"
+                      style="height: 50px"
+                      src="${track.album.cover_small}"
+                      alt="album cover"
+                    />
+                  </div>
+                  <div class="d-flex flex-wrap flex-grow-1">
+                    <div class="col-12 col-lg-10">${track.title_short} ${
+        track.title_version
+      }
+                    </div>
+                    <div class="col-12 col-lg-2 text-secondary">${track.rank}
+                    </div>
+                  </div>                    
+                  </div>
                 </div>
-                <div class="col-2 text-secondary">${track.rank}</div>
-                <div class="col-1 text-secondary">${convertTime(
+                <div class="d-none d-lg-block col-1 text-secondary">${convertTime(
                   track.duration
                 )}</div>
                 `;
