@@ -1,5 +1,5 @@
 const ARTIST_ENDPOINT =
- "https://striveschool-api.herokuapp.com/api/deezer/artist/";
+  "https://striveschool-api.herokuapp.com/api/deezer/artist/";
 
 let addressBarContent = new URLSearchParams(window.location.search);
 let artistId = addressBarContent.get("artistId");
@@ -79,11 +79,11 @@ const player = function (albums) {
 };
 
 function convertTime(seconds) {
- let minutes = Math.floor(seconds / 60);
- let remainingSeconds = seconds % 60;
- let formattedSeconds =
-  remainingSeconds < 10 ? "0" + remainingSeconds : remainingSeconds;
- return `${minutes} : ${formattedSeconds}`;
+  let minutes = Math.floor(seconds / 60);
+  let remainingSeconds = seconds % 60;
+  let formattedSeconds =
+    remainingSeconds < 10 ? "0" + remainingSeconds : remainingSeconds;
+  return `${minutes} : ${formattedSeconds}`;
 }
 
 fetch(ARTIST_ENDPOINT + artistId)
@@ -119,12 +119,10 @@ fetch(POPULARS)
   .then((popTracks) => {
     console.log(popTracks);
 
-  let cont = 1;
-  popTracks.data.forEach((track) => {
-   let item = document.createElement("div");
     let cont = 1;
     popTracks.data.forEach((track) => {
       let item = document.createElement("div");
+      let cont = 1;
       console.log(track);
 
       item.classList.add(
