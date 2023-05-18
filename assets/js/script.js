@@ -20,7 +20,7 @@ fetch(ENDPOINT)
               <div class="me-5" >
                 <img
                 class="p-0 me-3 img-fluid"
-                src="${albums.data[2].album.cover_medium}"        
+                src="${albums.data[3].album.cover_medium}"        
                           alt="album cover"
                 />
                 
@@ -36,7 +36,7 @@ fetch(ENDPOINT)
                 
                 
                 <div>
-                  <h1 class="fs-1"><a href="#">${albums.data[3].album.title}</a></h1>
+                  <h1 class="fs-1"><a href="./album-page.html?albumId=${albums.data[3].album.id}">${albums.data[3].album.title}</a></h1>
                 </div>
 
                 <a class="text-white fs-6" href="./artist-page.html?artistId=${albums.data[3].artist.id}">${albums.data[3].artist.name}</a>
