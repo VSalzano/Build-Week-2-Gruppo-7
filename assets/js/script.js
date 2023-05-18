@@ -92,10 +92,10 @@ fetch(ENDPOINT)
     randomAlbums.forEach((randomAlbum) => {
       console.log("sono qui", randomAlbum);
       let col = document.createElement("div");
-      col.classList.add("col-sm-6", "col-xl-4", "hp-suggested");
+      col.classList.add("col-sm-6", "col-xl-4", "hp-suggested", "me-0", "pe-0");
       col.innerHTML = `
 
-        <div id="elements" class="d-flex bg-dark rounded align-items-center pt-0 ">
+        <div id="elements" class="d-flex bg-dark rounded align-items-center pt-0 pe-0">
           <div class="me-3">
             <img
               src="${randomAlbum.album.cover_small}"
