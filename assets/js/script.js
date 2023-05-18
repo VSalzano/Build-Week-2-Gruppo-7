@@ -42,9 +42,9 @@ fetch(ENDPOINT)
                 <a class="text-white fs-6" href="./artist-page.html?artistId=${albums.data[3].artist.id}">${albums.data[3].artist.name}</a>
 
 
-                <div class="d-flex align-items-center mt-3">
+                <div class="d-flex align-items-center mt-3" ">
                   <button id="catch"
-                    class="btn me-3 border rounded-pill ps-4 pe-4"
+                    class="btn me-3 border rounded-pill ps-4 pe-4" style="background-color: #1ED760;
                     type="submit"
                   >
                     Play

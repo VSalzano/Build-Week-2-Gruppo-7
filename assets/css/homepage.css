@@ -78,6 +78,10 @@ i {
 
 
 @media only screen and (max-width: 574px) {
+    body{
+        font-family: 'Inter', sans-serif !important;
+    }
+
     #left {
         display: none !important;
     }
@@ -115,8 +119,38 @@ i {
         background-color: #171717 !important;
     }
 
-    #like {
+    #altro{
         display: none;
+    }
+
+    #canzoni{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .write{
+        display: flex;
+    }
+
+    .image{
+        margin-right: 30px;
+        
+    }
+
+    .playlist{
+        font-size: 1.1rem;
+        color: aqua !important;
+        
+    }
+
+    .tendence{
+        font-size: 1.3rem;
+        
+    }
+
+    .ico{
+        display: block;
     }
 
 }
