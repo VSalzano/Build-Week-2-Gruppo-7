@@ -59,3 +59,27 @@ p {
     font-size: 12px;
 
 }
+
+.single-track {
+    transition: 200ms;
+    margin: 0 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.single-track:hover {
+    transition: 200ms;
+    background-color: rgba(214, 208, 208, 0.158);
+    
+}
+
+#pop-title {
+    font-size: 1rem !important;
+    transition: 200ms;
+}
+
+#pop-title:hover {
+    transition: 200ms;
+    color: white !important;
+    text-decoration: underline !important;
+}

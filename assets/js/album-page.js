@@ -106,10 +106,10 @@ fetch(ALBUM_ENDPOINT + albumId)
     }
   })
   .then((singleAlbum) => {
-    console.log(singleAlbum);
+    console.log("sono qui", singleAlbum);
     albumTitle.innerHTML = singleAlbum.title;
     albumCover.src = `${singleAlbum.cover_medium}`;
-    artistName.innerHTML = singleAlbum.artist.name;
+    artistName.innerHTML = `<a id="pop-title" href="./artist-page.html?artistId=${singleAlbum.artist.id}">${singleAlbum.artist.name}</a>`;
     year.innerHTML = singleAlbum.release_date;
     tracks.innerHTML = singleAlbum.nb_tracks;
     albumDuration.innerHTML = convertTime(singleAlbum.duration);
@@ -128,23 +128,27 @@ fetch(ALBUM_ENDPOINT + albumId)
       );
       item.innerHTML = `
     <div class="col-1">
-        <p id="track-n" class="text-light my-0">${cont}</p>
+        <p id="track-n" class="text-secondary my-0">${cont}</p>
     </div>
     <div class="col-6">
         <div data-effetto-audio="${
           track.preview
         }" class="text-light my-0 d-block play-me">
-            ${track.title}
+            <p class="mb-0" id="album-page-title">${track.title}</p>
         </div>
         <a href="./artist-page.html?artistId=${
           track.artist.id
-        }" class="text-light my-0 d-block">${track.artist.name}</a>
+        }" id="pop-title" class="text-secondary my-0 d-block">${
+        track.artist.name
+      }</a>
     </div>
     <div class="col-3">
-        <p class="text-light text-center my-0">${track.rank}</p>
+        <p class="text-secondary text-center my-0">${track.rank}</p>
     </div>
     <div class="col-2">
-        <p class="text-light text-center my-0">${trackTime(track.duration)}</p>
+        <p class="text-secondary text-center my-0">${trackTime(
+          track.duration
+        )}</p>
     </div>
     `;
       trackList.appendChild(item);

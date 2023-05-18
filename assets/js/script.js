@@ -36,15 +36,15 @@ fetch(ENDPOINT)
                 
                 
                 <div>
-                  <h1 class="fs-1"><a href="./album-page.html?albumId=${albums.data[3].album.id}">${albums.data[3].album.title}</a></h1>
+                  <h1 class="fs-1"><a class="main-album-title" href="./album-page.html?albumId=${albums.data[3].album.id}">${albums.data[3].album.title}</a></h1>
                 </div>
 
-                <a class="text-white fs-6" href="./artist-page.html?artistId=${albums.data[3].artist.id}">${albums.data[3].artist.name}</a>
+                <a class="text-white fs-6 main-artist-name" href="./artist-page.html?artistId=${albums.data[3].artist.id}">${albums.data[3].artist.name}</a>
 
 
-                <div class="d-flex align-items-center mt-3">
+                <div class="d-flex align-items-center mt-3" ">
                   <button id="catch"
-                    class="btn me-3 border rounded-pill ps-4 pe-4"
+                    class="btn me-3 border rounded-pill ps-4 pe-4" style="background-color: #1ED760;
                     type="submit"
                   >
                     Play
@@ -90,8 +90,9 @@ fetch(ENDPOINT)
     console.log(randomAlbums);
 
     randomAlbums.forEach((randomAlbum) => {
+      console.log("sono qui", randomAlbum);
       let col = document.createElement("div");
-      col.classList.add("col-sm-6", "col-xl-4");
+      col.classList.add("col-sm-6", "col-xl-4", "hp-suggested");
       col.innerHTML = `
 
         <div id="elements" class="d-flex bg-dark rounded align-items-center pt-0 ">
@@ -103,7 +104,7 @@ fetch(ENDPOINT)
           </div>
 
           <div>
-            <a class="text-white" href="#">${randomAlbum.album.title}</a>
+            <a class="text-white pop-title" href="./album-page.html?albumId=${randomAlbum.album.id}">${randomAlbum.album.title}</a>
           </div>
         </div>
 

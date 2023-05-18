@@ -131,7 +131,8 @@ fetch(POPULARS)
         "ps-3",
         "ps-lg-5",
         "flex-wrap",
-        "align-items-center"
+        "align-items-center",
+        "single-track"
       );
       item.innerHTML = `
                 <div class="col-1 text-secondary">${cont}</div>
@@ -146,7 +147,9 @@ fetch(POPULARS)
                   <div class="d-flex flex-wrap flex-grow-1">
                     <div class="col-12 col-lg-10 play-me" data-effetto-audio="${
                       track.preview
-                    }">${track.title_short} ${track.title_version}
+                    }"> <h6 id="pop-title">${track.title_short} ${
+        track.title_version
+      }</h6>
                     </div>
                     <div class="col-12 col-lg-2 text-secondary">${track.rank}
                     </div>

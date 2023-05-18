@@ -78,6 +78,10 @@ i {
 
 
 @media only screen and (max-width: 574px) {
+    body{
+        font-family: 'Inter', sans-serif !important;
+    }
+
     #left {
         display: none !important;
     }
@@ -115,8 +119,43 @@ i {
         background-color: #171717 !important;
     }
 
-    #like {
+    #altro{
         display: none;
+    }
+
+    #canzoni{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .write{
+        display: flex;
+    }
+
+    .image{
+        margin-right: 30px;
+        
+    }
+
+    .playlist{
+        font-size: 1.1rem;
+        color: aqua !important;
+        
+    }
+
+    .tendence{
+        font-size: 1.3rem;
+        
+    }
+
+    .ico{
+        display: block;
+    }
+
+    .heart i{
+        background-color: green !important;
+        
     }
 
 }
@@ -191,3 +230,47 @@ p {
     }
 
 }
+
+#elements {
+    transition: 200ms;
+    margin: 0 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#elements:hover {
+    transition: 200ms;
+    background-color: rgba(214, 208, 208, 0.158) !important;
+    
+}
+
+.pop-title {
+    font-size: 1rem !important;
+    transition: 200ms;
+}
+
+.pop-title:hover {
+    transition: 200ms;
+    color: white !important;
+    text-decoration: underline !important;
+}
+
+.main-album-title {
+    transition: 200ms;
+}
+
+.main-album-title:hover {
+    transition: 200ms;
+    color: white !important;
+}
+
+.main-artist-name {
+    transition: 200ms;
+}
+
+.main-artist-name:hover {
+    transition: 200ms;
+    color: white !important;
+    text-decoration: underline !important;
+}
+
