@@ -153,6 +153,11 @@ i {
         display: block;
     }
 
+    .heart i{
+        background-color: green !important;
+        
+    }
+
 }
 
 
