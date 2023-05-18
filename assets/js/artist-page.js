@@ -144,9 +144,9 @@ fetch(POPULARS)
                     />
                   </div>
                   <div class="d-flex flex-wrap flex-grow-1">
-                    <div class="col-12 col-lg-10">${track.title_short} ${
-        track.title_version
-      }
+                    <div class="col-12 col-lg-10 play-me" data-effetto-audio="${
+                      track.preview
+                    }">${track.title_short} ${track.title_version}
                     </div>
                     <div class="col-12 col-lg-2 text-secondary">${track.rank}
                     </div>
