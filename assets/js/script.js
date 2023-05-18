@@ -69,13 +69,8 @@ fetch(ENDPOINT)
     let ancora = document.querySelector("h1 a");
     console.log(ancora);
     ancora.classList.add("fss");
-    let back= document.getElementById("catch")
-    back.classList.add("play")
-    
-
     let back = document.getElementById("catch");
-    console.log(back);
-    back.classList.add("play")
+    back.classList.add("play");
 
     function getRandomElements(array, numElements) {
       const shuffledArray = array.slice();
