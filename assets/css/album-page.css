@@ -47,6 +47,7 @@ p {
     transition: 200ms;
     margin: 0 1em;
     border-radius: 10px;
+
 }
 
 .single-track:hover {
@@ -75,4 +76,9 @@ p {
     transition: 200ms;
     cursor: pointer;
     text-decoration: underline !important;
+}
+
+#track-list {
+    overflow: auto;
+    height: 50vh;
 }
