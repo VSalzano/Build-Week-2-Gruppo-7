@@ -13,6 +13,16 @@ a {
     line-height: 2;
     font-size: 15px;
     color: #A3ADA0 !important;
+    transition: 200ms;
+}
+
+a i {
+    color: #A3ADA0 !important;
+}
+
+.side-hover:hover {
+    color: white !important;
+    transition: 200ms;
 }
 
 li {
@@ -86,4 +96,10 @@ p {
 #track-list {
     overflow: auto;
     height: 50vh;
+}
+
+#icons i {
+    margin-right: 15px;
+    color: white;
+    font-size: 20px;
 }

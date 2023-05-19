@@ -13,6 +13,12 @@ a {
     line-height: 2;
     font-size: 15px;
     color: #A3ADA0 !important;
+    transition: 200ms;
+}
+
+.side-hover:hover {
+    color: white !important;
+    transition: 200ms;
 }
 
 li {
@@ -70,7 +76,7 @@ p {
 .single-track:hover {
     transition: 200ms;
     background-color: rgba(214, 208, 208, 0.158);
-    
+
 }
 
 #pop-title {
@@ -82,4 +88,15 @@ p {
     transition: 200ms;
     color: white !important;
     text-decoration: underline !important;
+}
+
+#track-container {
+    overflow: auto;
+    height: 50vh;
+}
+
+#icons i {
+    margin-right: 15px;
+    color: white;
+    font-size: 20px;
 }
