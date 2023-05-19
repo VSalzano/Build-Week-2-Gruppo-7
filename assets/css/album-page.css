@@ -21,6 +21,11 @@ li {
     line-height: 2;
 }
 
+.fa-bookmark {
+    height: 20px;
+    width: 20px;
+}
+
 /* SIDEBAR DX */
 
 h6 {
