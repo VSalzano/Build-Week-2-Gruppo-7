@@ -1,20 +1,20 @@
 const ENDPOINT =
-  "https://striveschool-api.herokuapp.com/api/deezer/search?q=love";
+ "https://striveschool-api.herokuapp.com/api/deezer/search?q=metal";
 let header = document.getElementById("main");
 let featured = document.getElementById("featured");
 
 fetch(ENDPOINT)
-  .then((res) => {
-    if (res.ok) {
-      return res.json();
-    } else {
-      throw new Error("Error fetching album");
-    }
-  })
-  .then((albums) => {
-    console.log(albums.data);
-    let currentAlbum = document.createElement("div");
-    currentAlbum.innerHTML = `
+ .then((res) => {
+  if (res.ok) {
+   return res.json();
+  } else {
+   throw new Error("Error fetching album");
+  }
+ })
+ .then((albums) => {
+  console.log(albums.data);
+  let currentAlbum = document.createElement("div");
+  currentAlbum.innerHTML = `
     <div class="d-flex">
 
               <div class="me-5" >
@@ -65,35 +65,32 @@ fetch(ENDPOINT)
     
     `;
 
-    header.appendChild(currentAlbum);
-    let ancora = document.querySelector("h1 a");
-    console.log(ancora);
-    ancora.classList.add("fss");
-    let back = document.getElementById("catch");
-    back.classList.add("play");
+  header.appendChild(currentAlbum);
+  let ancora = document.querySelector("h1 a");
+  console.log(ancora);
+  ancora.classList.add("fss");
+  let back = document.getElementById("catch");
+  back.classList.add("play");
 
-    function getRandomElements(array, numElements) {
-      const shuffledArray = array.slice();
+  function getRandomElements(array, numElements) {
+   const shuffledArray = array.slice();
 
-      for (let i = shuffledArray.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffledArray[i], shuffledArray[j]] = [
-          shuffledArray[j],
-          shuffledArray[i],
-        ];
-      }
+   for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+   }
 
-      return shuffledArray.slice(0, numElements);
-    }
+   return shuffledArray.slice(0, numElements);
+  }
 
-    const randomAlbums = getRandomElements(albums.data, 6);
-    console.log(randomAlbums);
+  const randomAlbums = getRandomElements(albums.data, 6);
+  console.log(randomAlbums);
 
-    randomAlbums.forEach((randomAlbum) => {
-      console.log("sono qui", randomAlbum);
-      let col = document.createElement("div");
-      col.classList.add("col-sm-6", "col-xl-4", "hp-suggested", "me-0", "pe-0");
-      col.innerHTML = `
+  randomAlbums.forEach((randomAlbum) => {
+   console.log("sono qui", randomAlbum);
+   let col = document.createElement("div");
+   col.classList.add("col-sm-6", "col-xl-4", "hp-suggested", "me-0", "pe-0");
+   col.innerHTML = `
 
         <div id="elements" class="d-flex bg-dark rounded align-items-center pt-0 pe-0">
           <div class="me-3">
@@ -110,9 +107,9 @@ fetch(ENDPOINT)
 
         `;
 
-      featured.appendChild(col);
-    });
-  })
-  .catch((err) => {
-    console.log(err);
+   featured.appendChild(col);
   });
+ })
+ .catch((err) => {
+  console.log(err);
+ });
