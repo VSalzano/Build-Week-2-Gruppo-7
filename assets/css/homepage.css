@@ -387,3 +387,24 @@ p {
  color: white !important;
  text-decoration: underline !important;
 }
+
+/* width */
+::-webkit-scrollbar {
+ width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background-color: #171717;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ border-radius: 10px;
+ background: #8c8c8c47;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: #8c8c8c;
+}
