@@ -29,7 +29,7 @@ fetch(ENDPOINT)
               <div class="w-100">
                 <div class="d-flex justify-content-between">
                   <p class="p-0 m-0 fs-6">ALBUM</p>
-                  <button class="border border-dark bg-dark text-secondary mt-2 me-5 rounded-pill ">NASCONDI ANNUNCI</button>
+                  <button class="border border-dark bg-dark text-secondary mt-2 me-5 rounded-pill d-lg-none d-sm-none">NASCONDI ANNUNCI</button>
                   
                 </div>
 

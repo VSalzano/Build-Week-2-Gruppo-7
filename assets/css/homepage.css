@@ -16,9 +16,16 @@ ul {
   color: #a3ada0 !important;
 }
 
+#canzoni{
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-gap: 1em;
+  
+}
+
 a {
   text-decoration: none !important;
-
   line-height: 2;
   font-size: 15px;
   color: #a3ada0 !important;
@@ -253,6 +260,8 @@ i {
     bottom: 50px;
   }
 }
+
+
 
 /* SIDEBAR DX */
 
