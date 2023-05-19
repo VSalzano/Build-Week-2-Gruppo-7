@@ -89,7 +89,7 @@ const start = function () {
   console.log(mostRecurrentHex);
 
   let background = document.getElementById("background");
-  background.style.backgroundColor = `#${mostRecurrentHex}`;
+  background.style.backgroundImage = `linear-gradient(#${mostRecurrentHex},#212529)`;
   console.log(background.style.backgroundColor);
 };
 
